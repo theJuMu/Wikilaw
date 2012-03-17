@@ -1,0 +1,16 @@
+<p>Salut</p>
+<form action='/statuts' method='post'>
+  <p> <input type='text' placeholder='Nom de la structure' name='name'/></p>
+  <p><input type='text' placeholder='Capital' name='capital'/></p>
+  <p><input type='text' placeholder='Adresse' name= 'adress'/></p>
+  <textarea name = 'objet' rows="8" col="45">Décrivez l'objet de votre entreprise (vente de meuble, conseil en stratégie...)</textarea>
+  <p><input type='text' placeholder="Durée de l'entreprise (tout le monde met 99 ans)">
+  <p>Qui a le droit de déplacer le siège social de la société?</p>
+  <p><input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label></p>
+  <p><input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
+  <p><input type='text' placeholder='Le nom de votre banque' name='banque'></p>
+  <p>Pendant combien de temps les associés sont ils empêchés de vendre leurs actions à des personnes extérieures?</p>
+  <p><input type='text' placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
+  <p><input type='text' placeholder='Registre des sociétés de...' name='lieu'></p>
+  <p><input type='submit' value='Génère mes status!'/></p>
+</form>

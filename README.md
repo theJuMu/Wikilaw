@@ -1,11 +1,9 @@
 Hello!
 ====
 
-This is a demonstrator for [Sinatra](http://www.sinatrarb.com/) and [Twitter Bootstrap](http://twitter.github.com/bootstrap/). 
+I am a legal text generator.
+I am crafted with sinatra, Twitter bootstrap and love.
 
-Use it as a boilerplate to start your own apps.
-
-Go!
 ===
 
 Install dependencies:

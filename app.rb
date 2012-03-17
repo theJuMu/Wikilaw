@@ -2,6 +2,21 @@
 
 require 'rubygems'
 require 'sinatra'
+require 'haml'
+require 'dm-core'
+require 'dm-migrations'
+
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
+
+class Field
+  include DataMapper::Resource
+
+  property :id, Serial
+  property :name, String
+  property :completed_at, DateTime
+end
+
+DataMapper.auto_upgrade!
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
@@ -44,4 +59,28 @@ end
 
 get '/secure/place' do
   erb "This is a secret place that only <%=session[:identity]%> has access to!"
+end
+
+post '/statuts' do
+  @name = params[:name]
+  puts @name
+  @capital = params[:capital]
+  puts @capital
+  @adress = params[:adress]
+  puts @adress
+  @objet = params[:objet]
+  puts @objet
+  @move = params[:move]
+  puts @move
+  @banque = params[:banque]
+  puts @banque
+  @inalienabilite = params[:inalienabilite]
+  puts @inalienabilite
+  @lieu = params[:lieu]
+  puts @lieu
+  erb :statuts
+end
+
+get '/welcome' do 
+  erb :welcome
 end

@@ -1,0 +1,315 @@
+<div style="text-align:center;">
+  <h1>STATUTS</h1>
+  <h2><%= @name %></h2>
+  <p>Société par action simplifiée</p>
+  <p>au capital de <%= @capital %>€</p>
+  <p>Siège social <%= @adress %></p>
+</div>
+&nbsp;
+<h2>Titre1 Forme. Objet. Dénomination sociale. Siège. Durée</h2>
+<h3>Article 1er Forme</h3>
+<p>Il est formé entre les soussignés, une société par actions simplifiée, qui existera entre les propriétaires des actions ci-après créées, celles qui pourront l'être ultérieurement, leurs cessionnaires et ceux qui pourront le devenir ultérieurement.
+Cette société sera régie par les lois en vigueur, et notamment par les articles L. 227-1 à L. 227-20 du Code de commerce relatifs aux sociétés par actions simplifiées et par les présents statuts. Elle fonctionnera sous la même forme avec un ou plusieurs associés.
+Elle ne pourra offrir ses titres au public.</p>
+
+<h3>Article 2 Objet</h3>
+<p>La société a pour objet tant en France qu'à l'étranger : <%= @objet %></p>
+<p>Et toutes opérations industrielles, commerciales, mobilières ou immobilières pouvant se rapporter directement ou indirectement ou être utiles à l'objet social ou susceptibles d'en faciliter la réalisation.</p>
+
+<h3>Article 3 Dénomination</h3>
+<p>La dénomination de la société est : <%= @name %>
+<p>Tous les actes ou documents émanant de la société et destinés aux tiers, notamment lettres, factures, annonces et publications diverses, doivent indiquer cette dénomination, précédée ou suivie immédiatement et lisiblement des mots "Société par actions simplifiée" ou des initiales "SAS", de l'énonciation du montant du capital social et du numéro d'immatriculation au registre du commerce et des sociétés.</p>
+
+<h3>Article 4 Siège social</h3>
+<p>Le siège social est fixé <%= @adress %> </p>
+<p>
+<% if @move == 'president'%>
+<%= "Il peut être transféré en tout lieu par décision du président." %>
+<% elsif @move == 'associes' %>
+<%= "Le déplacement du siège social ne peut intervenir que sur décision des associés délibérant dans les conditions de majorité prévues à l'article 22." %>
+<% end %></p>
+
+<h3>Article 5 Durée</h3>
+<p>La durée de la société est fixée à <%= @duree %> années, à compter de son immatriculation au registre du commerce et des sociétés.</p>
+<p>Un an au moins avant la date d'expiration de la société, le président provoquera une décision des associés à l'effet de décider si la société doit être prorogée ; à défaut, tout associé pourra demander, conformément aux dispositions de l'article 1844-6 du Code civil, au président du tribunal de commerce statuant sur simple requête, la désignation d'un mandataire chargé d'obtenir une décision collective des associés sur la prorogation éventuelle de la société.</p>
+<p>Les associés seront consultés et la décision de prorogation devra être prise selon les modalités prévues aux articles 20 à 22 ci-après des statuts.</p>
+
+<h2>Titre II Apports. Capital social. Actions</h2>
+<h3>Article 6 Apports</h3>
+<strong>Apports constitutifs du capital social</strong>
+<p>Il est consenti à la société des apports en nature et des apports en numéraire dans les conditions suivantes :</p>
+<p>Il est fait apport à la société d'une somme totale en numéraire de <%= @capital %> euros, entièrement libérée.</p>
+<p>Les versements des fonds correspondants ont été constatés par un certificat établi par la banque <%= @banque %>, certificat dont un exemplaire est annexé aux présents statuts.</p>
+
+<h3>Article 7 Capital social</h3>
+<p>Le capital social est fixé à la somme de <%= @capital %> euros.</p>
+<p>Il est divisé en <%= @capital %> actions de un euros chacune, toutes de même rang, et intégralement souscrites par les soussignés.</p>
+
+<h3>Article 8 Augmentation et réduction du capital</h3>
+<strong>8.1 Augmentation du capital</strong>
+<p>Le capital social peut être augmenté – soit par émission d'actions ordinaires ou d'actions de préférence, soit par élévation de la valeur nominale des titres de capital existants – par décision collective des actionnaires prise sur le rapport du président et dans les conditions de majorité prévues à l'article 22 des présents statuts.</p>
+<p> La collectivité des associés peut déléguer au président les pouvoirs nécessaires à l'effet de réaliser, dans le délai légal, l'augmentation de capital en une ou plusieurs fois, d'en fixer les modalités, d'en constater la réalisation et de procéder à la modification corrélative des statuts.</p>
+<p>En tout état de cause, aucune souscription publique ne pourra être ouverte.</p>
+<p>Les actionnaires ont, proportionnellement au nombre de leurs actions, un droit de préférence à la souscription des actions de numéraire émises pour réaliser une augmentation de capital. La collectivité des associés qui décide l'augmentation de capital peut supprimer ce droit préférentiel de souscription, totalement ou partiellement, en faveur d'un ou plusieurs associés dénommés, dans le respect des conditions prévues par les dispositions légales. Les actionnaires peuvent aussi renoncer à titre individuel à leur droit préférentiel.</p>
+<p>Il peut être décidé de limiter une augmentation de capital contre numéraire au montant des souscriptions, dans les conditions prévues par la loi.</p>
+<p>Toute personne n'ayant pas la qualité d'actionnaire ne peut entrer dans la société, à l'occasion d'une augmentation de capital, sans être préalablement agréée par les associés statuant dans les conditions précisées sous l'article 11.3 ci-après pour l'autorisation des cessions d'actions. L'attributaire des actions nouvelles doit dans ce cas solliciter son agrément au moment de la souscription.</p>
+
+<strong>8.2 Réduction du capital</strong>
+<p>Le capital social peut être réduit, en vertu d'une décision collective des actionnaires, prise sur le rapport du président et dans les conditions de majorité prévues à l'article 22 des présents statuts, par voie de réduction du nombre d'actions ou de leur valeur nominale, notamment dans les cas de pertes constatées.</p>
+
+<h3>Article 9 Libération des actions</h3>
+<p>9.1 Les actions de numéraire doivent être libérées en totalité lors de leur souscription.</p>
+
+<p>9.2 Les actions émises en représentation d'un apport en nature doivent être intégralement libérées.</p>
+
+<h3>Article 10 Forme des actions</h3>
+<p>Les actions sont nominatives.</p>
+<p>Elles sont inscrites en compte selon les modalités prévues par la réglementation en vigueur.</p>
+<p>À la demande de l'actionnaire, une attestation d'inscription en compte lui sera délivrée par la société.</p>
+
+<h3>Article 11 Cession et transmission des actions</h3>
+<strong>11.1 Forme de la cession ou de la transmission</strong>
+<p>La propriété des actions résulte de leur inscription en compte individuel au nom du ou des titulaires sur les registres que la société tient à cet effet au siège social.</p>
+<p>La transmission des actions s'opère à l'égard de la société et des tiers par un virement du compte du cédant au compte du cessionnaire sur production d'un ordre de mouvement établi sur un formulaire fourni ou agréé par la société et signé par le cédant ou son mandataire. L'ordre de mouvement est enregistré sur un registre coté et paraphé, tenu chronologiquement, dit "registre des mouvements".</p>
+<p>En cas de transmission d'actions, pour quelque cause que ce soit, les bénéficiaires de la mutation devront fournir à la société tous documents justifiant la régularité de leurs droits.</p>
+
+<strong>11.2 Inaliénabilité des actions</strong>
+<p>Les actions créées sont inaliénables, c'est-à-dire ni négociables ni cessibles, pour quelque cause que ce soit, pendant une durée de <%= @inalienabilite %> ans à compter de leur émission.</p>
+<p>Cette disposition n'est pas applicable entre associés ni à l'associé qui viendrait à réunir en sa main toutes les actions de la SAS.</p>
+<p>La présente clause ne peut être modifiée qu'à l'unanimité des associés.</p>
+
+<strong>11.3 Droit de préemption et clause d'agrément</strong>
+<p>11.3.1 Toute cession d'actions à un tiers à la société est soumise à l'agrément de la société après exercice, dans les conditions fixées ci-après, du droit de préemption au profit des actionnaires de la société.</p>
+<p>Ce droit d'agrément s'applique à toute cession ou mutation, à titre onéreux ou gratuit, alors même que la cession aurait lieu, par voie d'adjudication publique, en vertu d'une décision judiciaire.</p>
+<p>Il est également applicable en cas d'apport en société, d'apport partiel d'actif, de fusion ou de scission, en cas de dévolution successorale ou de liquidation de communauté de biens et, en cas d'augmentation de capital, il s'applique à la cession des droits d'attribution ou de souscription, comme aux renonciations aux droits de souscription en faveur de bénéficiaires dénommés.</p>
+<p>La présente clause ne peut être modifiée qu'à l'unanimité des associés.</p>
+
+<p>11.3.2 Le cédant doit notifier son projet de cession au président et à chacun des autres associés par acte extrajudiciaire ou par lettre recommandée avec demande d'avis de réception ; il doit indiquer l'identité du cessionnaire proposé (nom ou dénomination sociale, adresse ou siège social), le nombre d'actions dont la cession est envisagée, le prix de cession et les principales conditions de la cession.</p>
+<p>Le cessionnaire proposé doit être de bonne foi.</p>
+<p>Cette notification vaut offre de cession aux prix et conditions indiqués au profit de tous les actionnaires. Dans les 30 jours de la réception de cette notification, le président porte à la connaissance de tous les actionnaires, par lettre recommandée avec demande d'avis de réception les conditions de forme et de délai régissant l'exercice des droits de préemption.
+
+<p>11.3.3 Chaque actionnaire doit, s'il désire exercer son droit de préemption, le notifier à la société par lettre recommandée avec demande d'avis de réception en indiquant le nombre d'actions qu'il souhaite acquérir, ce dans les trente jours de la notification du projet de cession qui lui a été faite.</p>
+À défaut pour l'actionnaire de notifier, dans le délai ci-dessus, qu'il entend exercer ce droit, il est réputé y avoir définitivement renoncé pour la cession en cause.</p>
+<p>Lorsque le nombre total des actions que les actionnaires bénéficiaires du droit de préemption ont déclaré acquérir est supérieur au nombre d'actions concernées, et faute d'accord entre lesdits bénéficiaires, les actions concernées sont réparties entre eux au prorata de leur participation dans le capital social, avec répartition des restes à la plus forte moyenne, mais dans la limite de leur demande.</p>
+
+<p>11.3.4 Dans les 40 jours de la notification du projet de cession par le cédant, le président décompte les droits de préemption exercés.</p>
+<p>Si ces droits sont exercés pour la totalité des actions offertes, le président établit une liste des actionnaires avec l'indication du nombre d'actions préemptées par chacun d'eux et la transmet, sans délai, au cédant et à tous les actionnaires.</p>
+<p>Si les droits de préemption n'absorbent pas la totalité des actions dont la cession est projetée, la société peut, avec l'accord du cédant, acquérir les actions concernées non préemptées ; elle sera tenue de céder les actions rachetées dans un délai de six mois ou de les annuler en procédant à une réduction de capital, conformément aux dispositions de l'article L. 227-18, alinéa 2, du Code de commerce.</p>
+<p>À défaut d'accord du cédant sur le rachat par la société des actions non préemptées, les droits de préemption sont réputés n'avoir jamais été exercés et l'actionnaire cédant sera libre de réaliser l'opération au profit du cessionnaire mentionné dans sa notification et aux conditions ainsi notifiées, sous réserve de la procédure d'agrément prévue ci-après.</p>
+
+<p>11.3.5 En cas d'exercice du droit de préemption, la cession doit intervenir dans le délai de 30 jours contre paiement du prix mentionné dans la notification de l'actionnaire cédant.<p>
+<p>Dans le cas contraire, la cession au tiers proposé par le cédant doit être soumise, par le président, dans un délai de trois mois (au maximum) à compter de la notification du projet de cession, à l'agrément des actionnaires.</p>
+<p>La décision d'agrément est prise à la majorité, le cédant ne prenant pas part au vote.</p>
+<p>Dans un délai de 30 jours à compter de la notification de la demande d'agrément, le président est tenu de notifier au cédant si la société accepte ou refuse la cession projetée.</p>
+<p>À défaut de notification dans ledit délai, l'agrément est réputé acquis au cessionnaire de bonne foi et le cédant éventuel pourra réaliser la cession dans un délai de trois mois.</p>
+<p>Le cédant devra adresser à la société, dans les 30 jours de la notification de la décision d'agrément qui lui sera faite par le président, les ordres de mouvement portant sur la cession des actions ; l'inscription au compte des actionnaires acheteurs sera effectuée dès réception desdits ordres de mouvement.</p>
+<p>Le prix de cession est réglé comptant au cédant dès réception de l'ordre de mouvement dûment signé.</p>
+<p>Faute pour le cédant d'adresser les ordres de mouvement relatifs à la cession des actions dans les huit jours, la cession sera constatée par le président.</p>
+
+<p>11.3.6 Si l'agrément est refusé, le cédant peut, dans les huit jours de la notification de refus qui lui est faite par le président, signifier par lettre recommandée avec demande d'avis de réception, adressée à la société, qu'il renonce à son projet de cession.</p>
+<p>À défaut de renonciation de la part du cédant, le président est tenu de faire acquérir la totalité des actions, avec le consentement du cédant, par la société ; la société sera tenue de céder les actions rachetées dans un délai de six mois ou de les annuler en procédant à une réduction de capital, et ce dans un délai de trois mois à compter de la notification du refus.</p>
+<p>À cet effet, il provoquera alors une décision collective des associés, pour statuer sur le rachat des actions par la société et sur la réduction du capital.</p>
+<p>Le prix de cession est réglé par la société selon les modalités fixées ci-après à l'article 11.4 des statuts.</p>
+
+<p>11.3.7 Toute cession effectuée en violation de la procédure d'agrément ainsi prévue est nulle.</p>
+
+<strong>11.4 Évaluation des actions et paiement du prix<strong>
+<p>Le prix de cession est fixé d'accord entre le cédant et les acquéreurs ; à défaut d'accord entre les parties, le prix de cession est déterminé par expert conformément aux dispositions de l'article 1843-4 du Code civil, les frais d'expertise étant supportés par moitié par le cédant et par moitié par le ou les acquéreurs.</p>
+<p>La décision de l'expert ne pourra faire l'objet d'aucun recours.</p>
+<p>Dans les huit jours de la détermination du prix, avis est donné au cédant de se présenter au siège social à l'effet de signer les ordres de mouvement. Faute pour le cédant de se présenter dans un délai de quinze jours à compter du précédent avis, la cession pourra être régularisée d'office par la société.</p>
+<p>En cas d'achat des actions par les actionnaires, le prix est payé comptant.</p>
+<p>En cas de rachat des actions par la société, le prix est payable dans les six mois de la signature de l'ordre de mouvement ou de l'acte de cession.</p>
+
+<h3>Article 12 Indivisibilité des actions</h3>
+<p>Les actions sont indivisibles à l'égard de la société qui ne connaît qu'un seul propriétaire pour chacune d'elles.</p>
+<p>Les propriétaires indivis d'actions sont tenus de se faire représenter auprès de la société et aux assemblées par un mandataire unique ; à défaut d'entente, il appartient à l'indivisaire le plus diligent de faire désigner judiciairement un mandataire chargé de les représenter.</p>
+<p>Le droit de vote attaché à l'action appartient à l'usufruitier pour les décisions concernant la répartition des bénéfices et au nu-propriétaire dans les autres cas.</p>
+
+<h3>Article 13 Droits et obligations des associés</h3>
+<p>Chaque action donne droit à une fraction de l'actif social proportionnellement au nombre d'actions existantes ; elle donne droit à une voix dans tous les votes et délibérations.</p>
+<p>Chaque action de même catégorie donne droit à une fraction des bénéfices dans les proportions définies à l'article 27 ci-après.</p>
+<p>Les droits et obligations attachés aux actions les suivent au cours de leur transmission ; la propriété d'une action emporte de plein droit l'adhésion aux statuts et aux résolutions régulièrement prises par les actionnaires.</p>
+<p>Les actionnaires ne supportent les pertes qu'à concurrence de leurs apports.</p>
+<p>Tout associé a le droit, à toute époque, d'obtenir à ses frais, au siège social, la délivrance d'une copie certifiée conforme des statuts en vigueur au jour de la demande. La société doit annexer à ce document la liste des commissaires aux comptes en exercice.</p>
+<p>Deux fois par an, les associés pourront également obtenir communication des livres et documents sociaux ; en outre, conformément à l'article L. 225-232 du Code de commerce, un ou plusieurs associés représentant au moins un vingtième du capital social peuvent, deux fois par exercice, poser par écrit des questions au président de la SAS sur tout fait de nature à compromettre la continuité de l'exploitation ; la réponse du président devra être communiquée au commissaire aux comptes.</p>
+
+<h3>Article 14 Exclusion d'un associé</h3>
+<strong>14.1 Exclusion de plein droit</strong>
+<p>L'exclusion de plein droit intervient en cas de dissolution, de redressement ou de liquidation judiciaire d'un associé.</p>
+
+<strong>14.2 Exclusion facultative</strong>
+<p>L'exclusion d'un associé peut être également prononcée dans les cas suivants :</p>
+<p>- violation des dispositions des présents statuts ;</p>
+<p>- exercice direct ou indirect d'une activité concurrente de celle exercée par la Société ;</p>
+<p>- révocation d'un associé de ses fonctions de mandataire social ;</p>
+<p>- condamnation pénale de nature correctionnelle ou criminelle prononcée à l'encontre d'un associé ;</p>
+<p>- Faute causant un préjudice à la Société.</p>
+
+<strong>14.3 Modalités de la décision d'exclusion</strong>
+<p>L'exclusion est prononcée par décision collective des associés statuant à la majorité ; l'associé dont l'exclusion est susceptible d'être prononcée participe au vote. Les associés sont consultés sur l'exclusion à l'initiative du Président. Si le Président est lui-même susceptible d'être exclu, les associés seront consultés à l'initiative de l'associé le plus diligent.</p>
+
+<strong>14.4 Prise d'effet de la décision d'exclusion</strong>
+<p>La décision d'exclusion prend effet à compter de son prononcé. Cette décision doit également statuer sur le rachat des actions de l'associé exclu et désigner le ou les acquéreurs de ces actions. Il est expressément convenu que la cession sera réalisée valablement sans application des clauses d'agrément et de préemption prévues aux présents statuts. La décision d'exclusion est notifiée à l'associé exclu par lettre recommandée avec demande d'avis de réception à l'initiative du Président.</p>
+
+<strong>14.5 Dispositions communes à l'exclusion de plein droit et à l'exclusion facultative</strong>
+<p>L'exclusion de plein droit et l'exclusion facultative entraînent dès le prononcé de la mesure la suspension des droits non pécuniaires attachés à la totalité des actions de l'associé exclu. La totalité des actions de l'associé exclu doit être cédée dans les quinze (15) jours de la décision d'exclusion à toute personne désignée comme il est prévu ci-dessus. Le prix de rachat des actions de l'associé exclu est déterminé d'un commun accord ou à défaut, à dire d'expert dans les conditions de l'article 1843-4 du Code civil.</p>
+
+<h2>Titre III Administration et direction de la société</h2>
+<h3>Article 15 Présidence</h3>
+<strong>15.1 Nomination du président</strong>
+<p>La société est gérée et administrée par un président, personne physique ou morale</p>
+
+AJOUTER ICI LE PARAGRAPHE SUR LE PREMIER PRESIDENT
+
+<p>En cours de vie sociale, le président est nommé par les associés délibérant dans les conditions requises pour les décisions collectives ordinaires à l'article 22 ci-après, et ce, en cas de vacance du poste de président, à l'initiative de l'associé le plus diligent.</p>
+
+<strong>15.2 Représentation de la société par le président. Attributions</strong>
+<strong>15.2.1 Rapports avec les tiers</strong>
+<p>Le président représente la société à l'égard des tiers.</p>
+<p>Le président est investi, en vertu de la loi, des pouvoirs les plus étendus pour agir en toutes circonstances au nom de la société ; il les exerce dans la limite de l'objet social et sous réserve de ceux expressément attribués par la loi aux associés.</p>
+<p>La société est engagée même par les actes du président qui ne relèvent pas de l'objet social, à moins qu'elle ne prouve que les tiers savaient que l'acte dépassait cet objet ou qu'ils ne pouvaient l'ignorer compte tenu des circonstances, étant exclu que la seule publication des statuts suffise à constituer cette preuve.</p>
+<p>Toute limitation par les présents statuts des pouvoirs du président est inopposable aux tiers.</p>
+
+<strong>15.2.2 Dans les rapports entre associés</strong>
+<p>Le président assume, sous sa responsabilité, la direction générale de la société.</p>
+<p>Dans les rapports entre associés, le président peut accomplir tous actes de direction, de disposition, de gestion et d'administration de la société, dans la limite de l'objet social et des prérogatives des décisions d'associés.</p>
+<p>Toutefois, le président ne pourra, sans l'accord préalable de la collectivité des associés délibérant aux conditions prévues ci-après à l'article 22, accomplir les actes énumérés à l'article 16.3.</p>
+
+<strong>15.2.3 Arrêté des comptes</strong>
+<p>Le président arrête les comptes à la fin de chaque exercice social, en se conformant aux prescriptions légales et réglementaires, en dressant l'inventaire des divers éléments de l'actif et du passif, le bilan, le compte de résultat et l'annexe.</p>
+<p>Il établit le rapport de gestion prescrit par la loi.</p>
+
+<strong>15.3 Délégation de pouvoir</strong>
+<p>En dehors de la délégation de pouvoirs prévue à l'article 16.1. ci-dessous au profit du directeur général, le président peut confier à tous mandataires de son choix tous mandats spéciaux pour un ou plusieurs objets déterminés.</p>
+
+<strong>15.4 Rémunération</strong>
+<p>Le président a droit en rémunération de ses fonctions à un traitement fixe.</p>
+<p>Le montant et les modalités de règlement de cette rémunération seront fixés par décision collective des associés, lors de l'approbation annuelle des comptes.</p>
+<p>En outre, le président a droit au remboursement de ses frais de représentation et de déplacement sur justification.</p>
+
+<strong>15.5 Responsabilité du président</strong>
+<p>Le président est responsable envers la société ou envers les tiers, soit des infractions aux dispositions légales régissant les sociétés par actions simplifiées, soit des violations des présents statuts, soit des fraudes commises par lui dans sa gestion.</p>
+
+<strong>15.6 Durée du mandat. Cessation des fonctions de président</strong>
+<p>15.6.1 Les fonctions du président prennent fin par son décès, interdiction, faillite personnelle, redressement ou liquidation judiciaire, révocation ou démission, ou encore par survenance d'incapacité physique ou mentale.</p>
+
+<p>15.6.2 Le président est révocable à tout moment par les autres actionnaires (dans l'hypothèse où les statuts exigent que le président soit actionnaire) statuant aux conditions prévues pour les décisions ordinaires à l'article 22 ci-après.</p>
+<p>La décision de révocation peut ne pas être motivée.</p>
+
+<p>15.6.3 Le président peut se démettre de ses fonctions à charge de prévenir les actionnaires de son intention à cet égard, 30 jours au moins à l'avance, par lettre recommandée avec demande d'avis de réception, sous réserve du droit pour la société de demander au président qui démissionnerait par malice ou sans cause légitime, des dommages-intérêts.</p>
+
+<h3>Article 16 Direction générale</h3>
+<strong>16.1 Directeurs généraux</strong>
+<strong>16.1.1 Qualité et nombre</strong>
+<p>Le président pourra être assisté d'un ou plusieurs directeurs généraux, personnes physiques, associées ou non de la société.</p>
+<p>Sur la proposition du président, le directeur général est nommé par une décision collective des associés délibérant aux conditions prévues à l'article 22 ci-après.</p>
+<p>La durée des fonctions du directeur général est fixée dans la décision de nomination; son mandat est renouvelable sans limitation.
+
+<strong>16.1.2 Mission et pouvoirs</strong>
+<p>Le (ou : Les) directeur(s) général (ou : généraux) a (ou : ont) mandat d'assister le président dans la mission qui lui incombe en vertu de la loi et des présents statuts ; il(s) n'a (ou : n'ont) qu'un rôle d'auxiliaire du président auquel il(s) reste(nt) subordonné(s).</p>
+<p>Ils disposent chacun des mêmes pouvoirs de représentation de la société vis-à-vis des tiers que le président.</p>
+
+<strong>16.1.3 Démission. Révocation</strong>
+<p>Le directeur général pourra démissionner de son mandat sous réserve de respecter un préavis d'un mois.</p>
+<p>Il est révocable à tout moment, par la collectivité des associés statuant aux conditions prévues à l'article 22 ci-après, sans qu'il soit besoin d'un juste motif et sans droit à indemnisation.</p>
+<p>En cas de décès, démission ou révocation du président, le ou les directeurs généraux conservent, sauf décision contraire des associés délibérant dans les conditions prévues à l'article 22 ci-après, leurs fonctions et attributions jusqu'à la nomination du nouveau président.</p>
+
+<strong>16.1.4 Rémunération</strong>
+<p>La décision collective nommant le directeur général fixe les modalités de sa rémunération.</p>
+
+<strong>16.2 Domaine réservé aux associés</strong>
+<p>Les actes et opérations ci-après ne peuvent être accomplis par le président (et/ou le directeur général) seul(s) et sont obligatoirement de la compétence des associés :
+– augmentation, réduction ou amortissement du capital ;
+– nomination des commissaires aux comptes ;
+– toutes questions relatives à l'approbation des comptes annuels et aux bénéfices ;
+– opérations de fusion, scission, dissolution et transformation de la société ;
+– approbation des conventions telles que visées à l'article 17 ci-après des statuts ;
+– exclusion d'un actionnaire ;
+– insertion ou modification des clauses statutaires d'agrément, d'inaliénabilité des actions, d'information lors du changement de contrôle d'une société associée ou d'exclusion ;
+– décision relative à l'agrément d'un cessionnaire d'actions ;
+
+<h3>Article 17 Conventions réglementées</h3>
+<strong>17.1 Domaine</strong>
+<p>Toute convention, à l'exception de celles portant sur les opérations courantes conclues à des conditions normales, intervenant, directement ou par personne interposée, entre la société et son président, ses autres dirigeants, un actionnaire détenant plus de 10 % des droits de vote ou s'il s'agit d'une société actionnaire, la société la contrôlant, doit être soumise au contrôle des associés.</p>
+
+<strong>17.2 Procédure</strong>
+<p>Le président présente aux associés un rapport sur ces conventions ; les associés devront statuer sur ce rapport lors de la réunion d'approbation des comptes annuels ; ce rapport est joint aux documents adressés aux associés en cas de consultation à distance.</p>
+
+<strong>17.3 Conséquence du vote des associés<strong>
+<p>Le refus de ratification par les associés n'entraîne pas la nullité des conventions en cause, mais les conséquences dommageables pouvant en résulter pour la société restent à la charge du président, du dirigeant et/ou de l'associé contractant. Si la convention est passée par plusieurs dirigeants et/ou associés, leur responsabilité est solidaire.</p>
+<p> Dans tous les cas les conventions produisent leurs effets.</p>
+
+<strong>17.4 Conventions interdites</strong>
+<p>Il est interdit au président personne physique, à son représentant permanent s'il s'agit d'une personne morale ou à un directeur général, à peine de nullité du contrat :</p>
+<p>– de contracter, sous quelque forme que ce soit, des emprunts auprès de la société ;</p>
+<p>– de se faire consentir par elle un découvert en compte courant ou autrement ;</p>
+<p>– ainsi que de faire cautionner ou avaliser par elle ses engagements envers les tiers.</p>
+<p>Cette interdiction s'applique également à toute personne interposée.</p>
+
+<strong>17-5 Conventions libres</strong>
+<p>Sauf lorsqu'en raison de leur objet ou de leurs implications financières, elles ne sont significatives pour aucune des parties, les conventions portant sur les opérations courantes et conclues à des conditions normales ne sont pas soumises au contrôle des associés ; tout actionnaire pourra en obtenir communication.</p>
+
+<strong>Article 18 Information des salariés</strong>
+<p>Le directeur général est l'organe social auprès duquel les délégués du comité d'entreprise exercent les droits définis par l'article L. 2323-66 du Code du travail.</p>
+<p>Préalablement à toute décision collective, le président devra adresser au comité les mêmes documents qu'aux associés.</p>
+<p>Les demandes d'inscription des projets de résolution à l'ordre du jour de la réunion devront être adressées au siège social par lettre recommandée avec AR accompagnées du texte des projets de résolutions (qui peuvent être assortis d'un bref exposé des motifs) dans un délai de 30 jours avant la date prévue de la réunion.</p>
+<p>Le président accusera réception des projets de résolution présentés par le comité dans le délai de cinq jours à dater de la réception de ces projets, par lettre recommandée avec AR.</p>
+
+<h2>Titre V Décisions collectives</h2>
+<h3>Article 20 . – Modalités de consultation des associés</h3>
+<p>20.1. – Les décisions ci-après doivent obligatoirement être prises collectivement par les associés :</p>
+<p>– augmentation, réduction ou amortissement du capital ;</p>
+<p>– nomination des commissaires aux comptes ;</p>
+<p>– toutes questions relatives à l'approbation des comptes annuels et aux bénéfices ;</p>
+<p>– approbation des conventions entre la société et le président, un dirigeant, un actionnaire détenant plus de 10 % des droits de vote, ou s'il s'agit d'une société actionnaire, la société la contrôlant ;</p>
+<p>– opérations de fusion, scission, dissolution et transformation de la société ;</p>
+<p>– prorogation de la société ;</p>
+<p>– exclusion d'un actionnaire ;</p>
+<p>– insertion ou modification des clauses statutaires d'agrément, d'inaliénabilité des actions, d'information lors du changement de contrôle d'une société associée ou d'exclusion ;</p>
+<p>– agrément d'un cessionnaire d'actions ;</p>
+
+<p>20.2. – Toutes les décisions pourront également être prises :</p>
+<p>– en assemblée ;</p>
+<p>– à distance, par voie de consultation écrite (courrier ou télécopie) ou d'un vote électronique ;</p>
+<p>– par conférence vidéo ou téléphonique ou tout autre procédé électronique ou informatique (notamment par liaison Internet) ;</p>
+<p>– ou encore résulter d'un acte signé par tous les associés.</p>
+au choix du président.</p>
+
+<p>20.3. – Les assemblées d'actionnaires sont convoquées par le président ; elles peuvent être également convoquées par le commissaire aux comptes ou par un mandataire de justice dans les conditions et selon les modalités prévues par la loi.</p>
+<p>La convocation des assemblées générales est faite, aux frais de la société, par tout procédé de communication écrite tel que télécopieou encore : par voie électronique), adressée à chacun des actionnaires quinze jours au moins avant la date de l'assemblée.</p>
+<p>Les assemblées sont convoquées au siège social ou en tout autre lieu indiqué sur la convocation.</p>
+<p>L'ordre du jour doit être indiqué dans la lettre de convocation ; celle-ci doit contenir le texte des résolutions proposées, le rapport du président et le cas échéant, le rapport du commissaire aux comptes.</p>
+
+<p>20.4. – L'assemblée est présidée par le président ou, en son absence, par un associé désigné par l'assemblée.</p>
+<p>À chaque assemblée est tenue une feuille de présence : celle-ci dûment émargée par les actionnaires présents et les mandataires, est certifiée exacte par le président.</p>
+<p>Tout associé peut voter par correspondance, au moyen d'un formulaire établi par la société et remis aux associés qui en font la demande. Il devra compléter le bulletin, en cochant pour chaque résolution, une case unique correspondant au sens de son vote.</p>
+<p>Le défaut de réponse dans le délai indiqué par la convocation vaut abstention totale de l'associé.</p>
+
+<p>20.5. – En cas de consultation écrite, le président doit adresser à chaque associé, aux frais de la société, par lettre simple (ou : par lettre recommandée avec demande d'avis de réceptionou encore : par tout procédé de communication écrite tel que télécopie ou télex), en même temps qu'un formulaire de vote par correspondance, le texte des résolutions proposées, accompagné de son rapport et le cas échéant, du rapport du commissaire aux comptes.</p>
+<p>Les associés disposent d'un délai de quinze jours à compter de la date de réception des projets de résolution pour émettre leur vote par écrit.</p>
+
+<p>20.6. – Le vote à distance des associés pourra s'effectuer sous forme de courrier électronique ; à cette fin, la société devra recueillir le consentement de chaque actionnaire destinataire des envois dématérialisés de documents.</p>
+
+<p>20.7. – Une assemblée pourra valabll'instant de sa dissolution. Sa dénomination doit alors être suivie des mots "société en liquidation".</p>
+<p>Le ou les liquidateurs sont nommés par la décision qui prononce la dissolution.</p>
+<p>Le liquidateur peut être choisi parmi les actionnaires ou en dehors d'eux.</p>
+<p>La collectivité des actionnaires garde les mêmes attributions qu'au cours de la vie sociale.</p>
+<p>Les actionnaires sont convoqués en fin de liquidation pour statuer sur les comptes définitifs, sur le quitus du ou des liquidateurs et la décharge de leur mandat et pour constater la clôture de la liquidation.</p>
+
+<h2>Titre VIII. – Personnalité morale. Formalités. Pouvoirs. Contestations</h2>
+<h3>Article 30 . – Personnalité morale. Immatriculation</h3>
+<p>La société ne jouira de la personnalité morale qu'à compter de son immatriculation au registre du commerce et des sociétés de <%= @lieu %>.</h3>
+
+<h3>Article 31 . – Actes accomplis pour le compte de la société en formation</h3>
+<p>Est annexé aux présents statuts un état des actes accomplis pour le compte de la société en cours de formation.</p>
+
+<h3>Article 32 . – Pouvoirs</h3>
+<p>Tous pouvoirs sont donnés au président pour remplir les formalités de publicité prescrites par la loi.</p>
+
+<h3>Article 33 . – Frais</h3>
+<p>Tous les frais, droits et honoraires auxquels donnera ouverture la constitution de la présente société seront portés au compte "frais de premier établissement".</p>
+<p>Fait à <%= @lieu %> </p>
+<p>Le ......</p>
+<p>En ...... exemplaires dont un pour chaque actionnaire, un pour l'enregistrement et deux pour le greffe.</p>
+
+
