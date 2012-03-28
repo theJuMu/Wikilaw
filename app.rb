@@ -85,3 +85,5 @@ end
 get '/welcome' do 
   erb :welcome
 end
+
+$LOAD_PATH.unshift(Dir.getwd)
