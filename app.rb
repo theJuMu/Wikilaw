@@ -23,7 +23,7 @@ before '/secure/*' do
 end
 
 get '/' do
-  erb 'Can you handle a <a href="/secure/place">secret</a>?'
+  erb :home
 end
 
 get '/login/form' do 
@@ -68,6 +68,10 @@ end
 
 get '/welcome' do 
   erb :welcome
+end
+
+get '/about' do
+    erb :about
 end
 
 $LOAD_PATH.unshift(Dir.getwd)
