@@ -7,6 +7,7 @@ require 'dm-core'
 require 'dm-migrations'
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
 class Field
   include DataMapper::Resource
