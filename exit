@@ -1,0 +1,92 @@
+commit 4b4e93b9df291713a8da809ca0ee03cfbf7d1796
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:54:24 2012 +0200
+
+    removed data mapper
+
+commit f3b22f9e259bf2b40c990aec6a4cc6504c505482
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:52:01 2012 +0200
+
+    config
+
+commit f083842453652682cd25a1cc9025e30318bf9141
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:48:13 2012 +0200
+
+    config
+
+commit a3c445918a3793ca70fc7d1fef0e311d53092060
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:28:44 2012 +0200
+
+    removed require haml
+
+commit 4d31232afc5502b84ce15a6b581b8d4b16515d90
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:22:35 2012 +0200
+
+    config
+
+commit 185231a296370e8981a60ba8d3f6b70848f63980
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:18:34 2012 +0200
+
+    fixed config.ru
+
+commit 28a1ced8358ca51ef128c59c91d5e65e6e78c07a
+Author: Albanlv <albanlv@gmail.com>
+Date:   Tue Mar 27 11:08:22 2012 +0200
+
+    preparing deploy
+
+commit 3af41a453ffa0b4051da9c968985d6b6f8d0855e
+Author: Albanlv <albanlv@gmail.com>
+Date:   Sat Mar 17 17:43:49 2012 +0100
+
+    the dark fortress
+
+commit 54f85b52ce363a368f6f27a338f59b60c47847b7
+Author: haxor <haxor@Hackalie.(none)>
+Date:   Thu Mar 15 11:50:50 2012 +0100
+
+    first commit
+
+commit f105092f10bfbb33bf7ffc9a75aa160af9e9fd5e
+Merge: e3d7e35 c509d9a
+Author: Tushar Pokle <tushar.pokle@gmail.com>
+Date:   Sat Dec 17 04:05:02 2011 -0800
+
+    Merge pull request #1 from kaerast/patch-1
+    
+    Fixes broken public folder setting (thanks kaerast)
+
+commit c509d9aebcae528b2126110ac267628259c6f2f2
+Author: Alice Kærast <alice@kaerast.info>
+Date:   Sat Dec 17 10:49:04 2011 +0000
+
+    Fixes broken public folder setting
+
+commit e3d7e3506ad156bb137211395d936b6d3560ee63
+Author: Tushar Pokle <tushar.pokle@gmail.com>
+Date:   Mon Nov 7 04:33:05 2011 +1100
+
+    Update README.md
+
+commit 1ea089c5082058509b972e8bd204191e8ed7f67a
+Author: Tushar Pokle <tushar.pokle@gmail.com>
+Date:   Mon Nov 7 00:15:39 2011 +1100
+
+    Go! instructions
+
+commit 5dc9719ce6461ee563ef7514ea2b0a55472e0bc5
+Author: Tushar Pokle <tushar.pokle@gmail.com>
+Date:   Mon Nov 7 00:08:42 2011 +1100
+
+    Mandatory readme!
+
+commit 452f64fe9c1ebc2b35bcfaa1fa84088aef0d8f82
+Author: Tushar Pokle <tushar.pokle@gmail.com>
+Date:   Sun Nov 6 23:55:24 2011 +1100
+
+    Only thing missing is the last url handling
