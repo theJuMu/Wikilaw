@@ -2,22 +2,6 @@
 
 require 'rubygems'
 require 'sinatra'
-require 'haml'
-require 'dm-core'
-require 'dm-migrations'
-
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/development.db")
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
-
-class Field
-  include DataMapper::Resource
-
-  property :id, Serial
-  property :name, String
-  property :completed_at, DateTime
-end
-
-DataMapper.auto_upgrade!
 
 configure do
   set :public_folder, Proc.new { File.join(root, "static") }
