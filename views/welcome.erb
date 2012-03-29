@@ -1,7 +1,23 @@
+    <button id="collapse" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+            simple collapsible
+                </button>
+                     
+                    <div id="demo" class="collapse in"> test, test, test… </div>
 <p>&nbsp;</p>
 <p>Répond à ces questions et clique sur le bouton</p>
 <p>&nbsp;</p>
 <form action='/statuts' method='post'>
+    
+<div class="accordion">
+  <p> <input type='text' placeholder='Nom du premier associé' name='name'/>
+    <a class="collapse" data-toggle="collapse" href="#demo">Ajouter un actionnaire</a>
+  </p>  
+  <div id="demo" class="collapse">
+     <p> <input type='text' placeholder='Nom du deuxième associé' name='name'/>
+       Ajouter un actionnaire
+     </p>
+  </div>
+</div>
   <p> <input type='text' placeholder='Nom de la structure' name='name'/></p>
   <p><input type='text' placeholder='Capital' name='capital'/></p>
   <p><input type='text' placeholder='Adresse' name= 'adress'/></p>
@@ -16,3 +32,4 @@
   <p><input type='text' placeholder='Registre des sociétés de...' name='lieu'></p>
   <p><button class="btn btn-info" type='submit'/>Génère mes statuts!</button></p>
 </form>
+<a class="btn btn-danger">Bouton</a>
