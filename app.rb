@@ -49,8 +49,16 @@ end
 post '/statuts' do
   @name = params[:name]
   puts @name
-  @capital = params[:capital]
-  puts @capital
+  @capital1 = params[:capital1]
+  puts @capital1
+  @capital2 = params[:capital2]
+  puts @capital2
+  @capital3 = params[:capital3]
+  puts @capital3
+  @capital4 = params[:capital4]
+  puts @capital4
+  @capital5 = params[:capital5]
+  puts @capital5
   @adress = params[:adress]
   puts @adress
   @objet = params[:objet]

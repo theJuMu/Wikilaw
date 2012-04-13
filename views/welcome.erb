@@ -1,35 +1,44 @@
-    <button id="collapse" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
-            simple collapsible
-                </button>
-                     
-                    <div id="demo" class="collapse in"> test, test, test… </div>
-<p>&nbsp;</p>
-<p>Répond à ces questions et clique sur le bouton</p>
-<p>&nbsp;</p>
+
+<em style="text-align:center;">Ta mission, si tu l'acceptes, est de remplir cet affreux formulaire pour générer des statuts</em>
+  <p>&nbsp;</p>
+<h2 style="text-align:center;">D'abord, qui sont les associés?</h2>
 <form action='/statuts' method='post'>
-    
-<div class="accordion">
-  <p> <input type='text' placeholder='Nom du premier associé' name='name'/>
-    <a class="collapse" data-toggle="collapse" href="#demo">Ajouter un actionnaire</a>
+  <p>&nbsp;</p>
+  <p> <input type='text' placeholder='Nom du premier actionnaire' name='surname1'/>
+      <input type='text' placeholder='Prénom' name= 'name1'/>
+      <input type='text' placeholder='Adresse' name='adress1'/>
+      <input type='text' placeholder='Date de naissance' name='date1'/>
+      <input type='number' placeholder='Capital apporté' name='capital1'></p>
+  <input type="button" id="mybutton" value="Ajouter un actionnaire"/>
+  <div id="container"></div>
+
+  <hr/>
+  <h2 style="text-align:center;">Ensuite, quelle société veux-tu créer?</h2>
+  <p>&nbsp;</p>
+  <p> <input type='text' placeholder='Nom de la société' name='name'/>
+      &nbsp; <input type='text' placeholder='Adresse du siège social' name= 'adress'/>
+      &nbsp; <input type='text' placeholder='Registre des sociétés de...(ville)' name='lieu'/>
+      &nbsp; <input type='text' placeholder='Date de fin du premier exercice' name='inalienabilite'>
+      &nbsp; <input type='text'  placeholder= "Objet de l'entreprise"/></p>
+  <hr/>
+  <h2 style="text-align:center;">Et enfin, quelques fioritures...</h2>
+  <p>&nbsp;</p>
+  <p>Qui a le droit de déplacer le siège social de la société? 
+  &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
+  &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
+  <p>Pendant combien de temps les associés sont ils empêchés de vendre leurs actions à des personnes extérieures? &nbsp; <input type='text' placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
+  <p>Si un associé vend une partie de ses actions, les autres peuvent-ils s'imposer à l'acheteur en vendant des actions (proportionnellement aux parts qu'ils détiennent) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non</p>
+  <p>Si un associé vend ses parts, les autres sont-ils prioritaires pour les racheter?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non</p>
+  <p>&nbsp;</p>
+  <p> <input type='text' placeholder='Nom du président' name='name'/>
+      &nbsp; <input type='text' placeholder="Prénom" name='name'/>
+      &nbsp; <input type='text' placeholder="Adresse" name='name'/>
+      &nbsp; <input type='text' placeholder="Date de naissance" name='name'/>
   </p>  
-  <div id="demo" class="collapse">
-     <p> <input type='text' placeholder='Nom du deuxième associé' name='name'/>
-       Ajouter un actionnaire
-     </p>
-  </div>
-</div>
-  <p> <input type='text' placeholder='Nom de la structure' name='name'/></p>
-  <p><input type='text' placeholder='Capital' name='capital'/></p>
-  <p><input type='text' placeholder='Adresse' name= 'adress'/></p>
-  <textarea name = 'objet' rows="8" col="45">Décrivez l'objet de votre entreprise (vente de meuble, conseil en stratégie...)</textarea>
-  <p><input type='text' placeholder="Durée de l'entreprise (tout le monde met 99 ans)">
-  <p>Qui a le droit de déplacer le siège social de la société?</p>
-  <p><input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label></p>
-  <p><input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
-  <p><input type='text' placeholder='Le nom de votre banque' name='banque'></p>
-  <p>Pendant combien de temps les associés sont ils empêchés de vendre leurs actions à des personnes extérieures?</p>
-  <p><input type='text' placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
-  <p><input type='text' placeholder='Registre des sociétés de...' name='lieu'></p>
-  <p><button class="btn btn-info" type='submit'/>Génère mes statuts!</button></p>
+  <p> <input type='text' placeholder='Nom du directeur général' name='name'/>
+      &nbsp; <input type='text' placeholder="Prénom" name='name'/>
+      &nbsp; <input type='text' placeholder="Adresse" name='name'/>
+      &nbsp; <input type='text' placeholder="Date de naissance" name='name'/>
+      <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></p>
 </form>
-<a class="btn btn-danger">Bouton</a>
+
