@@ -47,10 +47,14 @@ get '/secure/place' do
 end
 
 post '/statuts' do
-  @name = params[:name]
-  puts @name
-  @objet = params[:objet]
-  puts @objet
+  @company_name = params[:company_name]
+  puts @company_name
+  @company_address = params[:company_address]
+  puts @company_address
+  @activity = params[:activity]
+  puts @activity
+  @date_exercice = params[:date_exercice]
+  puts @date_exercice
   @capital1 = params[:capital1]
   puts @capital1
   @capital2 = params[:capital2]
@@ -61,18 +65,14 @@ post '/statuts' do
   puts @capital4
   @capital5 = params[:capital5]
   puts @capital5
-  @adress = params[:adress]
-  puts @adress
-  @objet = params[:objet]
-  puts @objet
   @move = params[:move]
   puts @move
   @banque = params[:banque]
   puts @banque
   @inalienabilite = params[:inalienabilite]
   puts @inalienabilite
-  @lieu = params[:lieu]
-  puts @lieu
+  @company_adress = params[:company_adress]
+  puts @company_adress
   erb :statuts
 end
 
