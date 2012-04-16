@@ -1,7 +1,4 @@
-
-<em style="text-align:center;">Ta mission, si tu l'acceptes, est de remplir cet affreux formulaire pour générer des statuts</em>
-  <p>&nbsp;</p>
-<h2 style="text-align:center;">D'abord, qui sont les associés?</h2>
+<h2 style="text-align:center;">Les associés</h2>
 <form action='/statuts' method='post'>
   <p>&nbsp;</p>
   <p> <input type='text' placeholder='Nom du premier actionnaire' name='surname1'/>
@@ -11,25 +8,14 @@
       <input type='number' placeholder='Capital apporté' name='capital1'></p>
   <input type="button" id="mybutton" value="Ajouter un actionnaire"/>
   <div id="container"></div>
-
   <hr/>
-  <h2 style="text-align:center;">Ensuite, quelle société veux-tu créer?</h2>
+  <h2 style="text-align:center;">La société</h2>
   <p>&nbsp;</p>
   <p> <input type='text' placeholder='Nom de la société' name='name'/>
       &nbsp; <input type='text' placeholder='Adresse du siège social' name= 'adress'/>
       &nbsp; <input type='text' placeholder='Registre des sociétés de...(ville)' name='lieu'/>
       &nbsp; <input type='text' placeholder='Date de fin du premier exercice' name='inalienabilite'>
-      &nbsp; <input type='text'  placeholder= "Objet de l'entreprise"/></p>
-  <hr/>
-  <h2 style="text-align:center;">Et enfin, quelques fioritures...</h2>
-  <p>&nbsp;</p>
-  <p>Qui a le droit de déplacer le siège social de la société? 
-  &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
-  &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
-  <p>Pendant combien de temps les associés sont ils empêchés de vendre leurs actions à des personnes extérieures? &nbsp; <input type='text' placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
-  <p>Si un associé vend une partie de ses actions, les autres peuvent-ils s'imposer à l'acheteur en vendant des actions (proportionnellement aux parts qu'ils détiennent) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non</p>
-  <p>Si un associé vend ses parts, les autres sont-ils prioritaires pour les racheter?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non</p>
-  <p>&nbsp;</p>
+      &nbsp; <input type='text'  placeholder= "Objet de l'entreprise" name = 'object' /></p>
   <p> <input type='text' placeholder='Nom du président' name='name'/>
       &nbsp; <input type='text' placeholder="Prénom" name='name'/>
       &nbsp; <input type='text' placeholder="Adresse" name='name'/>
@@ -39,6 +25,16 @@
       &nbsp; <input type='text' placeholder="Prénom" name='name'/>
       &nbsp; <input type='text' placeholder="Adresse" name='name'/>
       &nbsp; <input type='text' placeholder="Date de naissance" name='name'/>
-      <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></p>
+  <hr/>
+  <h2 style="text-align:center;">Fioritures</h2>
+  <p>&nbsp;</p>
+  <p>Qui a le droit de déplacer le siège social de la société? 
+  &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
+  &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
+  <p>Pendant combien d'années associés sont ils empêchés de vendre leurs actions? &nbsp; <input type='number' min="0" max="10" placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
+  <p>Si un associé vend des actions, les autres peuvent-ils s'imposer à l'acheteur en vendant aussi (proportionnellement à leurs parts) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non
+  <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></p>
+  <p>Si un associé vend ses parts, les autres sont-ils prioritaires pour les racheter?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non
+  </p>
 </form>
 

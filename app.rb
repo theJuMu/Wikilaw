@@ -49,6 +49,8 @@ end
 post '/statuts' do
   @name = params[:name]
   puts @name
+  @objet = params[:objet]
+  puts @objet
   @capital1 = params[:capital1]
   puts @capital1
   @capital2 = params[:capital2]

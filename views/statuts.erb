@@ -1,4 +1,7 @@
 <% @capital = @capital1.to_i + @capital2.to_i + @capital3.to_i + @capital4.to_i + @capital5.to_i %>
+
+<div class = row>
+<div class = span7>
 <div style="text-align:center;">
   <h1>STATUTS</h1>
   <h2><%= @name %></h2>
@@ -7,21 +10,22 @@
   <p>Siège social <%= @adress %></p>
 </div>
 &nbsp;
-<h2>Titre1 Forme. Objet. Dénomination sociale. Siège. Durée</h2>
-<h3>Article 1er Forme</h3>
+<span style="text-align:justify;">
+<h3>Titre1 Forme. Objet. Dénomination sociale. Siège. Durée</h3>
+<strong>Article 1er Forme</strong>
 <p>Il est formé entre les soussignés, une société par actions simplifiée, qui existera entre les propriétaires des actions ci-après créées, celles qui pourront l'être ultérieurement, leurs cessionnaires et ceux qui pourront le devenir ultérieurement.
 Cette société sera régie par les lois en vigueur, et notamment par les articles L. 227-1 à L. 227-20 du Code de commerce relatifs aux sociétés par actions simplifiées et par les présents statuts. Elle fonctionnera sous la même forme avec un ou plusieurs associés.
 Elle ne pourra offrir ses titres au public.</p>
 
-<h3>Article 2 Objet</h3>
+<strong>Article 2 Objet</strong>
 <p>La société a pour objet tant en France qu'à l'étranger : <%= @objet %></p>
 <p>Et toutes opérations industrielles, commerciales, mobilières ou immobilières pouvant se rapporter directement ou indirectement ou être utiles à l'objet social ou susceptibles d'en faciliter la réalisation.</p>
 
-<h3>Article 3 Dénomination</h3>
+<strong>Article 3 Dénomination</strong>
 <p>La dénomination de la société est : <%= @name %>
 <p>Tous les actes ou documents émanant de la société et destinés aux tiers, notamment lettres, factures, annonces et publications diverses, doivent indiquer cette dénomination, précédée ou suivie immédiatement et lisiblement des mots "Société par actions simplifiée" ou des initiales "SAS", de l'énonciation du montant du capital social et du numéro d'immatriculation au registre du commerce et des sociétés.</p>
 
-<h3>Article 4 Siège social</h3>
+<strong>Article 4 Siège social</strong>
 <p>Le siège social est fixé <%= @adress %> </p>
 <p>
 <% if @move == 'president'%>
@@ -30,11 +34,24 @@ Elle ne pourra offrir ses titres au public.</p>
 <%= "Le déplacement du siège social ne peut intervenir que sur décision des associés délibérant dans les conditions de majorité prévues à l'article 22." %>
 <% end %></p>
 
-<h3>Article 5 Durée</h3>
+<strong>Article 5 Durée</strong
 <p>La durée de la société est fixée à 99 années, à compter de son immatriculation au registre du commerce et des sociétés.</p>
 <p>Un an au moins avant la date d'expiration de la société, le président provoquera une décision des associés à l'effet de décider si la société doit être prorogée ; à défaut, tout associé pourra demander, conformément aux dispositions de l'article 1844-6 du Code civil, au président du tribunal de commerce statuant sur simple requête, la désignation d'un mandataire chargé d'obtenir une décision collective des associés sur la prorogation éventuelle de la société.</p>
 <p>Les associés seront consultés et la décision de prorogation devra être prise selon les modalités prévues aux articles 20 à 22 ci-après des statuts.</p>
+</span>
+</div>
 
+<div class="span4 offset1">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    <p>Plus clairement</p>
+<h3>Vous créez <%= @name %>, pour faire  <%= @objet %> avec <%= @capital %>€. 
+</div>
+
+<div class="span7">
 <h2>Titre II Apports. Capital social. Actions</h2>
 <h3>Article 6 Apports</h3>
 <strong>Apports constitutifs du capital social</strong>
@@ -313,4 +330,5 @@ au choix du président.</p>
 <p>Le ......</p>
 <p>En ...... exemplaires dont un pour chaque actionnaire, un pour l'enregistrement et deux pour le greffe.</p>
 
-
+</div>
+</div>
