@@ -71,8 +71,16 @@ post '/statuts' do
   puts @banque
   @inalienabilite = params[:inalienabilite]
   puts @inalienabilite
-  @company_adress = params[:company_adress]
-  puts @company_adress
+  @president_name = params[:president_name]
+  puts @president_name
+  @president_surname = params[:president_surname]
+  puts @president_surname
+  @president_address = params[:president_address]
+  puts @president_address
+  @president_date = params[:president_date]
+  puts @president_date
+  @lieu = params[:lieu]
+  puts @lieu
   erb :statuts
 end
 

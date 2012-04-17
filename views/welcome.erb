@@ -1,3 +1,5 @@
+<p><em>Remplissez le questionnaire ci-dessous pour générer vos status. C'est gratuit et nous ne collectons pas vos données</em></p>
+<p>&nbsp;</p>
 <h2 style="text-align:center;">Les associés</h2>
 <form action='/statuts' method='post'>
   <p>&nbsp;</p>
@@ -16,21 +18,18 @@
       &nbsp; <input type='text' placeholder='Registre des sociétés de...(ville)' name='place'/>
       &nbsp; <input type='text' placeholder='Date de fin du premier exercice' name='date_exercice'>
       &nbsp; <input type='text'  placeholder= "Objet de l'entreprise" name = 'activity' /></p>
-  <p> <input type='text' placeholder='Nom du président' name='surname_president'/>
-      &nbsp; <input type='text' placeholder="Prénom" name='name_president'/>
-      &nbsp; <input type='text' placeholder="Adresse" name='adress_president'/>
-      &nbsp; <input type='text' placeholder="Date de naissance" name='birth_president'/>
+  <p> <input type='text' placeholder='Nom du président' name='president_surname'/>
+      &nbsp; <input type='text' placeholder="Prénom" name='president_name'/>
+      &nbsp; <input type='text' placeholder="Adresse" name='president_address'/>
+      &nbsp; <input type='text' placeholder="Date de naissance" name='president_date'/>
   </p>  
-  <p> <input type='text' placeholder='Nom du directeur général' name='surname_director'/>
-      &nbsp; <input type='text' placeholder="Prénom" name='name_director'/>
-      &nbsp; <input type='text' placeholder="Adresse" name='adress_director'/>
-      &nbsp; <input type='text' placeholder="Date de naissance" name='birth_director'/>
   <hr/>
   <h2 style="text-align:center;">Fioritures</h2>
   <p>&nbsp;</p>
   <p>Qui a le droit de déplacer le siège social de la société? 
   &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
   &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
+  <p>Où imprimerez vous les statuts? &nbsp; <input type='text' placeholder='Nom de la ville' name='lieu'></p>
   <p>Pendant combien d'années associés sont ils empêchés de vendre leurs actions? &nbsp; <input type='number' min="0" max="10" placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
   <p>Si un associé vend des actions, les autres peuvent-ils s'imposer à l'acheteur en vendant aussi (proportionnellement à leurs parts) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non
   <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></p>
