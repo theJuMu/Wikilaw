@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Lawve.me</title>
+    <title>Lawve.me</title>
   
     <!-- insert js and css for twitter bootstrap and jquery -->    
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -30,7 +30,20 @@
 
   </script>
   
-    </head>
+  <!-- insert Facebook social plugin -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=225646797493471";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+  
+  <!-- script for twitter button --> 
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </head>
   <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
           <div class="container">
@@ -42,10 +55,18 @@
               <a class="brand" href="/">Lawve.me</a>
               <div class="nav-collapse">
                   <ul class="nav">
-	                    <li><a href="/about">About</a></li>
+                      <li><a href="/about">About</a></li>
                       </li>
                   </ul>
+
               </div>
+                  <!-- Twitter button -->
+                  <div class="pull-right" style="margin-top:10px;">
+                  <a href="https://twitter.com/lawveme" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @lawveme</a>
+                  </div>
+                  <div class="fb-like pull-right" style="margin-top:10px" data-href="http://lawve.me" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="verdana">
+                  </div>
+                  <!-- Facebook button -->
           </div>
       </div>
   </div>
