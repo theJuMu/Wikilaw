@@ -10,30 +10,59 @@
       <input type='number' placeholder='Capital apporté' name='capital1'></p>
   <input type="button" id="mybutton" value="Ajouter un actionnaire"/>
   <div id="container"></div>
-  <hr/>
+          <p>&nbsp;</p>
+  <div class="well">
   <h2 style="text-align:center;">La société</h2>
   <p>&nbsp;</p>
   <p> <input type='text' placeholder='Nom de la société' name='company_name'/>
-      &nbsp; <input type='text' placeholder='Adresse du siège social' name= 'company_address'/>
-      &nbsp; <input type='text' placeholder='Registre des sociétés de...(ville)' name='place'/>
-      &nbsp; <input type='text' placeholder='Date de fin du premier exercice' name='date_exercice'>
-      &nbsp; <input type='text'  placeholder= "Objet de l'entreprise" name = 'activity' /></p>
+      <input type='text' placeholder='Adresse du siège social' name= 'company_address'/>
+      <input type='text' placeholder='Registre des sociétés de...(ville)' name='place'/>
+      <input type='text' placeholder='Date de fin du premier exercice' name='date_exercice' class="remark" id="remark1" title="Conseil" data-content="Généralement la fin de l'année en cours"/>
+      <input type='text'  placeholder= "Objet de l'entreprise" name = 'activity' class="remark" id="remark2" title="Conseil" data-content="Il est conseillé de définir l'objet de la société le plus largement possible."/></p>
   <p> <input type='text' placeholder='Nom du président' name='president_surname'/>
-      &nbsp; <input type='text' placeholder="Prénom" name='president_name'/>
-      &nbsp; <input type='text' placeholder="Adresse" name='president_address'/>
-      &nbsp; <input type='text' placeholder="Date de naissance" name='president_date'/>
+      <input type='text' placeholder="Prénom" name='president_name'/>
+      <input type='text' placeholder="Adresse" name='president_address'/>
+      <input type='text' placeholder="Date de naissance" name='president_date'/>
   </p>  
-  <hr/>
+  </div>
   <h2 style="text-align:center;">Fioritures</h2>
   <p>&nbsp;</p>
-  <p>Qui a le droit de déplacer le siège social de la société? 
-  &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
-  &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></p>
-  <p>Où imprimerez vous les statuts? &nbsp; <input type='text' placeholder='Nom de la ville' name='lieu'></p>
-  <p>Pendant combien d'années associés sont ils empêchés de vendre leurs actions? &nbsp; <input type='number' min="0" max="10" placeholder='Entre 0 et 10 ans' name='inalienabilite'></p>
-  <p>Si un associé vend des actions, les autres peuvent-ils s'imposer à l'acheteur en vendant aussi (proportionnellement à leurs parts) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non
-  <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></p>
-  <p>Si un associé vend ses parts, les autres sont-ils prioritaires pour les racheter?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui <input type='checkbox' name='inalienabilite' value='no'>Non
+  <div class="row">
+      <div class="span9">
+          <p>Pendant combien d'années les associés sont ils empêchés de vendre leurs actions? &nbsp; <input type='number' min="0" max="10" placeholder='Entre 0 et 10 ans' name='inalienabilite' class="remark" id="remark3" title="Conseil" data-content="Vous choisissez ici le nombre d'années pendant lesquelles vous souhaitez geler la vente d'actions. Vous ne pouvez dépasser 10 ans."/></p>
+
+          <table class="table table-striped table-bordered ">
+              <tr>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                  <td>
+                    Qui a le droit de déplacer le siège social de la société? 
+                    &nbsp; <input type="radio" name='move' value="president" id="president" checked="checked" /> <label for="president">Le président</label>
+                    &nbsp; <input type="radio" name='move' value="associes" id="associes" /> <label for="associes">Les associés</label></td>
+              </tr>
+              <tr>
+                  <td>Si un associé vend des actions, les autres peuvent-ils s'imposer à l'acheteur en vendant aussi (proportionnellement à leurs parts) ?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui &nbsp; <input type='checkbox' name='inalienabilite' value='no'>Non</td>
+              </tr>
+              <tr>
+                  <td>Si un associé vend ses parts, les autres sont-ils prioritaires pour les racheter?  &nbsp; <input type='checkbox' name='inalienabilite' value='yes'>Oui &nbsp; <input type='checkbox' name='inalienabilite' value='no'>Non</td>
+              </tr>
+          </table>
+          <p>Où imprimerez vous les statuts? &nbsp; <input type='text' placeholder='Nom de la ville' name='lieu'></p>
+      </div>
+      <div class="span3">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></tr>
+      </div>
+  </div>
+
+
   </p>
 </form>
 

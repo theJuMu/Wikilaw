@@ -7,6 +7,13 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: #3C7AA3;
+}
+
 .clearfix {
   *zoom: 1;
 }

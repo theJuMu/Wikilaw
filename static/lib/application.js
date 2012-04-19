@@ -29,3 +29,12 @@ $(function(){
 jQuery(function() {
       $("#collapse").collapse('show');
 });
+
+jQuery(function() {
+      $(".remark").popover(
+      {
+      placement: 'top',
+      html : true
+      }
+      );
+});
