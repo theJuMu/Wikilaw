@@ -1,5 +1,11 @@
 <% @capital = @capital1.to_i + @capital2.to_i + @capital3.to_i + @capital4.to_i + @capital5.to_i %>
+<p>&nbsp;</p>
+<em>Voici vos statuts. Vous trouverez des explications sur certains articles en passant votre souris sur le symbole</em> <span class="badge badge-info">info</span>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
+<hr/>
 <div class = row>
 <div class = span7>
 <div style="text-align:center;">
@@ -15,15 +21,13 @@
 <h3>Titre1 Forme. Objet. Dénomination sociale. Siège. Durée</h3>
 <p>&nbsp;</p>
 <em><strong>Article 1er Forme</strong></em>
-<p>Les personnes qui signent ce document constituent une société par actions simplifiée. Cette société sera régie par ces statuts, les lois en vigueur, et notamment par les articles L. 227-1 à L. 227-20 du Code de commerce relatifs aux sociétés par actions simplifiées. Elle fonctionnera sous la même forme avec un ou plusieurs associés. Elle ne pourra offrir ses titres au public.</p>
+<p>Les personnes qui signent ce document constituent une <strong>société par actions simplifiée</strong>. Cette société sera régie par ces statuts, les lois en vigueur, et notamment par les articles L. 227-1 à L. 227-20 du Code de commerce relatifs aux sociétés par actions simplifiées. Elle fonctionnera sous la même forme avec un ou plusieurs associés. Elle ne pourra offrir ses titres au public.</p>
 <p>&nbsp;</p>
 
-<div  class=" well remark" id="remark1" title="Attention" data-content="Il est conseillé de définir l'objet de la société le plus largement possible.">
 <em><strong>Article 2 Objet</strong></em>
 <p>La société a pour objet tant en France qu'à l'étranger :
 <p><em><%= @activity %></em></p>
 <p>Et toutes opérations industrielles, commerciales, mobilières ou immobilières pouvant se rapporter directement ou indirectement ou être utiles à l'objet social ou susceptibles d'en faciliter la réalisation.</p>
-</div>
 <p>&nbsp;</p>
 
 <em><strong>Article 3 Dénomination</strong></em>
@@ -59,14 +63,14 @@ Les associés seront consultés et la décision de prorogation devra être prise
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-    <p>Plus clairement</p>
+<!--    <p>Plus clairement</p>
 <h3>Vous créez <%= @company_name %> avec <%= @capital %>€.</h3>
 <h3> Vous serez basé au <%= @company_address %></h3>
 <h3>Votre objet est: <%= @activity %></h3>
+<p>&nbsp;</p> -->
 </div>
 
-<hr>
+<hr/>
 
 <div class="span7">
 <p>&nbsp;</p>
@@ -75,13 +79,13 @@ Les associés seront consultés et la décision de prorogation devra être prise
 <span style="text-align:justify">
 <h3>Titre II Apports. Capital social. Actions</h3>
 <p>&nbsp;</p>
-<em><strong>Article 6 Apports</strong></em>
+<p><em><strong>Article 6 Apports</strong></em></p>
 <strong>Apports constitutifs du capital social</strong>
 <p>Les associés apportent à la société un capital (en numéraire) d’un montant de <%= @capital %>€, entièrement libéré.
 Les versements des fonds ont été constatés par un certificat établi par la banque <%= @banque %>, certificat dont un exemplaire est annexé aux présents statuts.</p>
 <p>&nbsp;</p>
 
-<em><strong>Article 7 Capital social</strong></em>
+<p><em><strong>Article 7 Capital social</strong></em></p>
 <p>Le capital social est fixé à la somme de <em><%= @capital %></em> euros.
 Il est divisé en <em><%= @capital %> </em> actions de un euros chacune, toutes de même rang, et intégralement souscrites par les soussignés.</p>
 <p>&nbsp;</p>
@@ -112,12 +116,12 @@ Elles sont inscrites en compte.
 <p>La propriété des actions résulte de leur inscription en compte au nom du ou des titulaires sur les registres réels ou électroniques tenus par la Société.
 La transmission des actions s'opère à l'égard de la société et des tiers par un virement de compte à compte.</p>
 
-<strong>11.2 Inaliénabilité des actions</strong>
+<strong>11.2 Inaliénabilité des actions</strong>&nbsp;<span class="badge badge-info remark" id="remark4" title="Explication" data-content="Cet article interdit aux associés de vendre leurs actions pendant la durée que vous avez définie."/>info</span>
 <p>Les actions créées sont inaliénables pendant une durée de <%= @inalienabilite %>  ans à compter de leur émission.
 Cette disposition n'est pas applicable entre associés ni à l'associé qui viendrait à réunir en sa main toutes les actions de la S.A.S.
 La présente clause ne peut être modifiée qu'à l'unanimité des associés.</p>
 
-<strong>11.3 Droit de préemption</strong>
+<strong>11.3 Droit de préemption</strong>&nbsp;<span class="badge badge-info remark" id="remark5" title="Explication" data-content="Tout associé qui souhaite vendre (ou donner) ses actions doit les proposer en priorité aux autres associés."/>info</span>
 <p>Les transferts d’actions ne sont soumis à aucun agrément, mais chaque associé accorde aux autres associés (les « Autres Parties ») dans les conditions définies ci-après, un droit de préemption portant sur tout transfert d’action qu’il détient ou pourrait détenir dans la Société.
 Préalablement à tout transfert d’actions, même entre associés, chaque associé bénéficie et doit faire bénéficier chacun des autres associés du droit de préemption.
 Par exception, ne sont pas soumis à ce droit de préemption les transferts d’actions résultant de la liquidation d’une communauté entre époux et toutes opérations de partage d’indivision, ni de legs à un descendant suite au décès d’un associé.</p>
@@ -147,7 +151,7 @@ Proportionnellement au nombre d’actions demandé par chacune des autres partie
 Puis, en cas de rompus ou d’actions non attribuées, les actions concernées restantes seront attribuées à la Partie ayant émis le souhait d’acquérir le plus d’actions.</p>
 Si les offres de rachat réunies des Préempteurs concernent au total un nombre d’actions inférieur à celui des actions concernées, le Cédant pourra procéder, sous réserve du respect des autres stipulations des statuts, au transfert des actions concernées au profit du Cessionnaire.</p>
 <p>&nbsp;</p>
-<p><strong>11.4 Droit de Sortie Conjointe Proportionnelle</strong></p>
+<p><strong>11.4 Droit de Sortie Conjointe Proportionnelle</strong>&nbsp;<span class="badge badge-info remark" id="remark6" title="Explication" data-content="Un associé souhaitant vendre des actions doit permettre aux autres associés de vendre aux mêmes conditions. Si l'associé veut vendre 100 actions, cela ne change rien pour l'acheteur mais il aura peut être 5 vendeurs de 20 actions chacun au lieu d'un seul vendeur de 100 actions."/>info</span>
 <p><strong> Définition</strong></p>
 <p>Chacun des associés accorde aux autres associés un droit de sortie conjointe proportionnelle (le « droit de sortie conjointe proportionnelle ») et ce, quel que soit le pourcentage du capital dont le transfert est envisagé.
 En conséquence, dès lors que l’un des associés (le « Cédant ») envisage de transférer une ou des actions à toute personne, même associée, il doit offrir aux autres associés, à condition qu’ils n’aient pas exercé leur droit de préemption, la possibilité de céder conjointement et avec lui, aux prix et conditions indiqués dans la Notification, tout ou partie de leurs actions dans les limites stipulées dans les présents statuts.
@@ -199,14 +203,24 @@ Faute pour le ou les acquéreur(s) de procéder à l’acquisition des actions d
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-    <p>Plus clairement</p>
-<h3>Votre capital est de <%= @capital %>, correspondant à <%= @capital %> actions de un euro chacune.</h3>
+<!-- <h3>Votre capital est de <%= @capital %>, correspondant à <%= @capital %> actions de un euro chacune.</h3>-->
+<div class="well">
+    <p>Vous n'avez pas que des apports en capital? Si vous avez des apports en nature ou en industrie et souhaitez adapter cet article, écrivez-nous.</p>
+
+    <a href="mailto:lawve.me@gmail.com"><button class="btn btn-danger btn-large">Contactez-nous</button></a>
+</div>
+<p>&nbsp;</p>
+<div class="well">
+    <p>Vous pouvez aussi créer plusieurs catégories d'actions.</p>
+
+    <a href="mailto:lawve.me@gmail.com"><button class="btn btn-danger btn-large">Contactez-nous</button></a>
+</div>
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<h3>Les associés doivent attendre <%= @inalienabilite %> ans avant de pouvoir vendre des actions.</h3>
+<!-- <h3>Les associés doivent attendre <%= @inalienabilite %> ans avant de pouvoir vendre des actions.</h3>
 <p>&nbsp;</p><p>&nbsp;</p>
 <h3>Tout associé qui souhaite vendre (ou donner) ses actions doit les proposer en priorité aux autres associés</h3>
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<h3>Un associé souhaitant vendre des actions doit permettre aux autres associés de vendre aux mêmes conditions. Si l'associé veut vendre 100 actions, cela ne change rien pour l'acheteur mais il aura peut être 5 vendeurs de 20 actions chacun au lieu d'un seul vendeur de 100 actions.</h3>
+<h3>Un associé souhaitant vendre des actions doit permettre aux autres associés de vendre aux mêmes conditions. Si l'associé veut vendre 100 actions, cela ne change rien pour l'acheteur mais il aura peut être 5 vendeurs de 20 actions chacun au lieu d'un seul vendeur de 100 actions.</h3> -->
 </div>
 <hr/>
 
