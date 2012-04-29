@@ -16,15 +16,11 @@ PDFKit.configure do |config|
     }
 end
 
-get '/pdf' do
-    if params[:url]
-        content_type 'application/pdf'
-        url = params[:url] =~ /^http:\/\// ? params[:url] : "http://#{params[:url]}"
-        kit = PDFKit.new url
-        kit.to_pdf
-    else
-        'specify url param'
-    end
+get '/download_statuts' do
+    content_type 'application/pdf'
+    url = 'Mon pdf de test'
+    kit = PDFKit.new url
+    kit.to_pdf
 end
 
 configure do
