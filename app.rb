@@ -108,6 +108,31 @@ get '/welcome' do
   erb :welcome
 end
 
+
+get '/mentions_question' do
+    erb :mentions_question
+end
+
+get '/mentions_perso_question' do
+    erb :mentions_perso_question
+end
+
+get '/mentions_perso_form' do 
+    erb :mentions_perso_form
+end
+
+post '/mentions_perso' do
+  @mail_perso = params[:mail_perso]
+  puts @mail_perso
+  @host = params[:host]
+  puts @host
+  @host_adress = params[:host_adress]
+  puts @host_adress
+  @host_phone = params[:host_phone]
+  puts @host_phone
+  erb :mentions_perso
+end
+
 get '/about' do
     erb :about
 end
