@@ -38,3 +38,7 @@ jQuery(function() {
       }
       );
 });
+
+$(document).ready(function(){
+      $("#SignupForm").formToWizard({ submitButton: 'Save Account'} )
+});
