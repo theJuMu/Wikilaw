@@ -1,7 +1,8 @@
 <p><em>Remplissez le questionnaire ci-dessous pour générer vos status. C'est gratuit et nous ne collectons pas vos données</em></p>
 <p>&nbsp;</p>
-<h2 style="text-align:center;">Les associés</h2>
-<form action='/statuts' method='post'>
+<form action='/statuts' id="SignupForm" method='post'>
+  <fieldset>
+  <legend>Les actionnaires</legend>
   <p>&nbsp;</p>
   <p> <input type='text' placeholder='Nom du premier actionnaire' name='surname1'/>
       <input type='text' placeholder='Prénom' name= 'name1'/>
@@ -11,8 +12,10 @@
   <input type="button" id="mybutton" value="Ajouter un actionnaire"/>
   <div id="container"></div>
           <p>&nbsp;</p>
-  <div class="well">
-  <h2 style="text-align:center;">La société</h2>
+  </fieldset>
+
+    <fieldset>
+  <legend>La société</legend>
   <p>&nbsp;</p>
   <p> <input type='text' placeholder='Nom de la société' name='company_name'/>
       <input type='text' placeholder='Adresse du siège social' name= 'company_address'/>
@@ -24,8 +27,11 @@
       <input type='text' placeholder="Adresse" name='president_address'/>
       <input type='text' placeholder="Date de naissance" name='president_date'/>
   </p>  
-  </div>
-  <h2 style="text-align:center;">Fioritures</h2>
+</fieldset>
+
+<div id="step3">
+<fieldset> 
+  <legend>Fioritures</legend>
   <p>&nbsp;</p>
   <div class="row">
       <div class="span9">
@@ -61,7 +67,7 @@
           <button class="btn btn-danger btn-large pull-right" type='submit'/>Et voilà! Génère mes statuts</button></tr>
       </div>
   </div>
-
+</fieldset>
 
   </p>
 </form>
