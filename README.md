@@ -5,16 +5,16 @@ I am a legal text generator.
 I am crafted with sinatra, Twitter bootstrap and love.
 
 ===
+Download the app:
 
-Install dependencies:
+	git clone https://github.com/albanlv/Wikilaw.git
 
-	rvm 1.9.2
-	gem install sinatra
+Install dependencies (while in the Wikilaw folder, run):
 
-Download and run sinatra-bootstrap:
+	bundle install
 
-	git clone git@github.com:pokle/sinatra-bootstrap.git
-	cd sinatra-bootstrap
-	ruby app.rb
+Run the app:
+
+	ruby -rubygems app.rb
 	
 Then open [http://localhost:4567/](http://localhost:4567/)
